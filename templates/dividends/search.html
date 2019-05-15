@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'css/searchStyles.css' %}" rel="stylesheet">
+
+
+<div class="left-panel">
+    <div id="clear-refinements"></div>
+
+    <h2>Sector</h2>
+    <div id="sector-list"></div>
+     <h2>Industry</h2>
+    <div id="industry-list"></div>
+     <h2>Stock Price</h2>
+    <div id="range-slider"></div>
+         <h2>Stock Price</h2>
+    <div id="numeric-menu"></div>
+</div>
+<div class="right-panel">
+    <div id="search-box" ></div>
+    <div id="hits"></div>
+    <div id="pagination"></div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.1/dist/algoliasearchLite.min.js"
+        integrity="sha256-NSTRUP9bvh8kBKi7IHQSmOrMAdVEoSJFBbTA+LoRr3A=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.2.0"
+        integrity="sha256-/8usMtTwZ01jujD7KAZctG0UMk2S2NDNirGFVBbBZCM=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/algolia.js' %}"></script>
+{% endblock %}
